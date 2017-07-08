@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170708033506) do
+ActiveRecord::Schema.define(version: 20170708033940) do
+
+  create_table "streamers", force: :cascade do |t|
+    t.string "name"
+    t.string "token"
+    t.string "code"
+    t.string "game_status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
