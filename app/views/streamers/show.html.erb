@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @streamer.name %>
+</p>
+
+<p>
+  <strong>Token:</strong>
+  <%= @streamer.token %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @streamer.code %>
+</p>
+
+<p>
+  <strong>Game status:</strong>
+  <%= @streamer.game_status %>
+</p>
+
+<%= link_to 'Edit', edit_streamer_path(@streamer) %> |
+<%= link_to 'Back', streamers_path %>

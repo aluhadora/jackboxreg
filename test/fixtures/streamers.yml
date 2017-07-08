@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  token: MyString
+  code: MyString
+  game_status: MyString
+
+two:
+  name: MyString
+  token: MyString
+  code: MyString
+  game_status: MyString

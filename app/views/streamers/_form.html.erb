@@ -1,0 +1,37 @@
+<%= form_with(model: streamer, local: true) do |form| %>
+  <% if streamer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(streamer.errors.count, "error") %> prohibited this streamer from being saved:</h2>
+
+      <ul>
+      <% streamer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :streamer_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :token %>
+    <%= form.text_field :token, id: :streamer_token %>
+  </div>
+
+  <div class="field">
+    <%= form.label :code %>
+    <%= form.text_field :code, id: :streamer_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :game_status %>
+    <%= form.text_field :game_status, id: :streamer_game_status %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
